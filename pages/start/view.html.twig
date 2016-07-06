@@ -1,0 +1,18 @@
+{% set formName = "start" %}
+{% set pagetitle = "Start" %}
+{% extends "form.html.twig" %}
+
+{% block form %}
+    <div class="input-group">
+	  <input type="text" class="form-control" ng-model="moisturePercent" ng-readonly="true">
+      <button class="btn btn-secondary" type="button" ng-click="refresh()"> Refresh </button>  
+    </div>
+{% endblock %}
+
+{# remove form buttons #}
+{% block form_buttons %}
+{% endblock %}
+
+{% block footer %}
+    <script src="js/start.js"></script>
+{% endblock %}
