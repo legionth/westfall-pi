@@ -1,0 +1,11 @@
+{
+	"autoload" : {
+		"psr-4" : {
+			"WestfallPi\\Service\\" : "src/service"
+		}
+	},
+	"require" : {
+		"twig/twig" : "~1.0",
+		"slim/slim" : "~2.0"
+	}
+}
